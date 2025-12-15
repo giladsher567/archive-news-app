@@ -5,16 +5,16 @@ export default function Layout() {
         <div className="app-layout">
             <aside className="sidebar">
                 <NavLink to="/" className={({ isActive }) => isActive ? 'sidebar-link active' : 'sidebar-link'}>
-                    Dashboard
+                    <span>Dashboard</span>
                 </NavLink>
                 <NavLink to="/new" className={({ isActive }) => isActive ? 'sidebar-link active' : 'sidebar-link'}>
-                    New Analysis
+                    <span>New Analysis</span>
                 </NavLink>
                 <NavLink to="/train" className={({ isActive }) => isActive ? 'sidebar-link active' : 'sidebar-link'}>
-                    Train
+                    <span>Train</span>
                 </NavLink>
                 <NavLink to="/archive" className={({ isActive }) => isActive ? 'sidebar-link active' : 'sidebar-link'}>
-                    Archive
+                    <span>Archive</span>
                 </NavLink>
             </aside>
             <div className="main-content">
